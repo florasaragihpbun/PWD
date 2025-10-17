@@ -1,0 +1,113 @@
+@keyframes animasi1 {
+    from {background-color:darkgoldenrod ;}
+    to {background-color: lightcoral;}
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: radial-gradient(yellow, brown, darkgoldenrod);
+    padding: 0px;
+    margin: 0px;
+    animation-name: animasi1;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+h1{
+    font-size:xx-large;
+    text-align: center;
+    color:khaki;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+form{
+    width: 60%;
+    background-color:sandybrown;
+    margin: 30px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+fieldset{
+    border: 2px solid palegoldenrod;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend{
+    font-weight: bold;
+    font-style:initial;
+    font-size: large;
+    font
+    color:rgb(95, 48, 0);
+    padding: 0 10px;
+}
+
+p {
+    margin: 10px 0;
+    color:black;
+    font-weight: bold;
+    font-style:oblique;
+}
+
+@media animasi2 {
+    animation::selection(1.1);
+    transition: ::selection(1.1);
+    transform: ::selection(1.1);
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid darkorange;
+    font-size: 14px;
+    box-sizing: content-box;
+    transition: ease-in-out;
+    animation-name: animasi2;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color:chocolate;
+    box-shadow:rgba(0,0,0,0.3);
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    animation-name: animasi2;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: goldenrod;
+    color:blanchedalmond;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:all 0.3 ease;
+}
+
+input[type="submit"]:hover {
+    background-color: coral;
+    box-shadow: 0 0 10px burlywood;
+    transform: scale(1.1);
+}
+
+@media (max-width:  768px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
