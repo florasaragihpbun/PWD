@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAJY Technology Workshop 2026</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    
+    <ul class="navigation">
+        <li><a href="index.xhtml">Beranda</a></li>
+        <li><a href="schedule.xhtml">Jadwal</a></li>
+        <li>Pendaftaran</li>
+    </ul>
+
+    <div class="info-registration">
+        <h3>Informasi Pendaftaran</h3>
+        <p>Peserta dapat mendaftar melalui formulir di bawah. Pastikan semua informasi yang dimasukkan benar dan lengkap.</p>
+        <p>Setelah mendaftar, peserta akan dihubungi lewat email dan nomor telepon, serta menerima informasi lebih lanjut mengenai workshop.</p>
+    </div>
+
+    <form class="registration-form" action="php/process_registration.php" method="post">
+        <fieldset>
+            <legend class="form-title">Formulir Pendaftaran</legend>
+            <p>
+                <label for="name">Nama Lengkap (*):</label>
+                <input type="text" id="name" name="name" placeholder="flora"/>
+            </p>
+
+            <p>
+                <label for="email">Email (*):</label>
+                <input type="email" id="email" name="email" placeholder="flora@example.com"/>
+            </p>
+
+            <p>
+                <label for="phone">Nomor Telepon (*):</label>
+                <input type="tel" id="phone" name="phone" placeholder="08123456789"/>
+            </p>
+
+            <p>
+                <label for="institution">Institusi (*):</label>
+                <input type="text" id="institution" name="institution" placeholder="Universitas Atma Jaya Yogyakarta"/>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" id="submit" value="Daftar" />
+        </p>
+    </form>
+
+    <div class="contact-section">
+        <h3>Hubungi Kami</h3>
+        <p>Email: uajy@uajy.ac.id</p>
+        <p>Telepon: 08123456789</p>
+        <p>Jika Anda memiliki pertanyaan atau membutuhkan informasi lebih lanjut, jangan ragu untuk menghubungi kami.</p>
+    </div>
+
+</body>
+
+<footer>
+    <p>&copy; 2026 UAJY Technology Workshop. All rights reserved.</p>
+</footer>
+
+</html>
